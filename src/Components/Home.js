@@ -3,6 +3,7 @@ import { AppText } from '../Constants'
 import { homeImage, profilePhoto } from '../assets'
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import Typewriter from 'typewriter-effect'
+import SocialLinks from './SocialLinks';
 const Home = () => {
 
 
@@ -35,7 +36,9 @@ const Home = () => {
       <div>
      <img className='w-70  rounded-full h-80 mt-10 m-20 ml-40 hidden  md:hidden lg:flex' src={profilePhoto} alt='profile photo'/>
      </div>
+   
      <img className=' w-[400px] md:w-[500px]' src={homeImage} alt='img' />
+    
     </div>
   )
 }

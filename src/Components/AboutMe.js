@@ -6,8 +6,8 @@ const AboutMe = () => {
   return (
     <div id='about'>
       <img src={wave} className='w-full absolute ' alt='wave img'/>
-      <img src={laptop} className='hidden md:flex absolute  mt-[-30px] md:mt-[-100px] w-[150px] md:w-[200px]' alt='laptop img' />
-      <div className='h-[600px] md:h-[350px] -mt-4 bg-purple-600  w-full object-cover'>
+      <img src={laptop} className=' absolute  mt-[-30px] md:mt-[-100px] w-[150px] md:w-[200px]' alt='laptop img' />
+      <div className='h-auto pb-5 -mt-4 bg-purple-600  w-full object-cover'>
       <h2 className='text-[50px] font-bold text-black md:text-white text-center pt-24 md:pt-14 '>{AppText.About }
       <span className='text-black p-2 '>{AppText.Me}</span>
       </h2>

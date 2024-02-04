@@ -121,7 +121,7 @@ export const portfolio=[
         id:4,
         title:'Swiggy Clone',
         type:'website',
-        desc:"Developed a responsive food ordering app using Swiggy's live API for real-time data.",
+        desc:"Developed a responsive food ordering app using Swiggy's live API for real-time data",
         imageUrl:"https://neetable.com/img/blog/blog-inner/build-an-on-demand-food-delivery-app-like-swiggy/how-to-build-an-on-demand-food-delivery-app-like-swiggy.jpg",
         github:"https://github.com/UdbhavSrivastava27/swiggy",
         deployLink:"https://swiggy-rho-blush.vercel.app/"

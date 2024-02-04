@@ -3,6 +3,8 @@ import { contactusbg, phone } from '../assets'
 import { AppText } from '../Constants'
 import SectionHeading from '../Shared/SectionHeading'
 import SocialLinks from './SocialLinks'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { HiOutlineMail } from 'react-icons/hi'
 
 function ContactUs() {
   return (
@@ -45,8 +47,21 @@ function ContactUs() {
           
          
             </form>
+            
            </div>
-           
+           <div className=' flex flex-row justify-evenly md:hidden lg:hidden mt-6 mb-[-20px]' >
+               <a href='https://github.com/UdbhavSrivastava27' target='_blank'>
+             <FaGithub size={30}/>
+             </a>
+             
+             <a href='https://www.linkedin.com/in/udbhav-srivastava-a9305321b/'  target="_blank">
+             <FaLinkedin size={30}/>
+             </a>
+
+             <a href='mailto:udbhavsrivastava.27@gmail.com' target='_balnk'>
+             <HiOutlineMail size={35} />
+             </a>
+           </div>
            
         </div>
         <SocialLinks/>

@@ -15,7 +15,7 @@ const Footer = () => {
     duration={1000} // Adjust the duration of the scroll
     
   >
-     <FaArrowCircleUp className=' absolute  mr-4 md:mr-20 right-0 shadow-xl shadow-slate-600 rounded-full   text-2xl md:text-4xl lg:text-6xl animate-bounce' />
+     <FaArrowCircleUp className=' absolute  mr-4 md:mr-20 right-0 shadow-xl shadow-slate-600 rounded-full   text-3xl md:text-4xl lg:text-6xl animate-bounce' />
   </ScrollLink>
     <div className='mt-10  items-center flex flex-col  '>
    
