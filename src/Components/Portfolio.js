@@ -14,10 +14,10 @@ const Portfolio = () => {
     setPortfolioListOrg(portfolio);
   }, []);
   const filterPortfolio = (type) => {
-    if (type == "All") {
+    if (type === "All") {
       setPortfolioList(portfolioListOrg);
     } else {
-      const result = portfolioListOrg.filter((item) => item.type == type);
+      const result = portfolioListOrg.filter((item) => item.type === type);
       setPortfolioList(result);
       console.log(result);
     }
@@ -68,7 +68,7 @@ const Portfolio = () => {
         </button>
       </div>
       <div
-        className="grid grid-cols-2 items-center content-center md:grid-cols-3 lg:grid-cols-3
+        className="grid grid-cols-1 items-center content-center md:grid-cols-3 
         md:px-24 lg:px-48 p-4 "
       >
         {portfolioList.map((item, index) => (

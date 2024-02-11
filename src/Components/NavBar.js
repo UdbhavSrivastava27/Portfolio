@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { us} from '../assets'
+import { TbLocationShare } from 'react-icons/tb';
 const NavBar = () => {
 
    const [toggle, setToggle] = useState(false);
@@ -41,18 +42,25 @@ const NavBar = () => {
      </svg>
      :
      <svg xmlns="http://www.w3.org/2000/svg" fill="none" 
-     onClick={()=>setToggle(false)} viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 m-6 mr-32 cursor-pointer float-right ">
+     onClick={()=>setToggle(false)} viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 m-6 mr-32 cursor-pointer ">
      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
    </svg>
    }
-    {toggle?<ul className=' flex flex-col font-semibold mt-8 bg-gray-200 p-4 rounded-md'>
+    {toggle?
+    
+    <div className=' relat'>
+    <div className=' absolute  mr-20'>
+      <ul className=' flex flex-col font-semibold bg-gray-200 p-4 rounded-md '>
           <li className=' p-2 transition-all ease-in-out hover:scale-110 cursor-pointer'><a href='/#home'>Home</a></li>
           <li className=' mt-2 p-2 transition-all ease-in-out hover:scale-110 cursor-pointer'><a href='/#about'>About Me</a></li>
           <li  className=' p-2 mt-2  transition-all ease-in-out hover:scale-110 cursor-pointer' ><a href='/#skills'>Skills</a></li>
           <li className=' p-2 mt-2 transition-all ease-in-out hover:scale-110 cursor-pointer' ><a href='/#portfolio'>Portfolio</a></li>
           <li className=' p-2 mt-2  transition-all ease-in-out hover:scale-110 cursor-pointer' ><a href='/contact'>Contact Me</a></li>
           
-        </ul>:null}
+        </ul>
+        </div>
+        
+        </div>:null}
       </div>
     
     </div>
