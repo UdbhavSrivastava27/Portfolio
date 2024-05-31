@@ -9,7 +9,7 @@ const Home = () => {
 
   
   return (
-    <div id="home" className=' mt-10 px-4 md:px-24  flex flex-col md:flex-row items-center'>
+    <div id="home" className=' mt-10 px-4 md:px-24  flex flex-col md:flex-row items-center justify-around'>
       
       <div className='md:-mt-28'>
       <h1 className='text-5xl  font-bold'>{AppText.hello}</h1>
@@ -26,15 +26,17 @@ const Home = () => {
       
 
 
-      <h1 className='text-gray-500'>{AppText.IntroDesc}</h1>
+      <h2 className='text-gray-500'>{AppText.IntroDesc}</h2>
       <button className='bg-sky-500 p-2 px-3 rounded-md my-4 transition-all ease-in-out hover:scale-110 hover:bg-slate-500 flex flex-row' 
       onClick={() => window.open('/Resume.pdf', '_blank')}
       >
       Resume
       <span className='p-1'><FaCloudDownloadAlt/></span></button>
       </div>
+
+
       <div>
-     <img className='w-70  rounded-full h-80 mt-10 m-20 ml-40 hidden  md:hidden lg:flex' src={profilePhoto} alt='profile photo'/>
+     {/* <img className='w-70  rounded-full h-80 mt-10 m-20 ml-40 hidden  md:hidden lg:flex' src={profilePhoto} alt='profile'/> */}
      </div>
    
      <img className=' w-[400px] md:w-[500px]' src={homeImage} alt='img' />
